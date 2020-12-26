@@ -23,13 +23,13 @@ my_grades = []
 my_notes = []
 course_notes = {}
 final_notes = {}
+courses = {}
 print("You can take min three courses which you entered above!")
-no_subjects = int(input("How many subjects would you like to choose? "))          #  for j in range(0, 5)
-print("You're gonna choose " + str(no_subjects) + " subjects")
+no_subjects = int(input("How many subjects would you like to take? "))          #  for j in range(0, 5)
+print("You're gonna take an exam from " + str(no_subjects) + " subjects")
 if no_subjects >= 3 and no_subjects <= 5:
     for i in range(no_subjects):
-        my_subjects = input('Enter the subject of an exam: ')
-        my_notes = input('Enter your grade from this subject: ')
-        course_notes[my_subjects] = my_notes
-    print(course_notes)
-    
+        my_subjects = [input('Enter the subject of an exam: ')]
+        course_notes = {'midterm': int(input("midterm grade: ")), 'final': int(input("final grade: ")), 'project': int(input("project grade: "))}
+        print(my_subjects,course_notes)
+        
