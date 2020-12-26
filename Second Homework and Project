@@ -30,6 +30,6 @@ if no_subjects >= 3 and no_subjects <= 5:
     for i in range(no_subjects):
         my_subjects = input('Enter the subject of an exam: ')
         my_notes = input('Enter your grade from this subject: ')
-        course_notes[0] = my_subjects
-        course_notes[my_subjects] = my_grades
+        course_notes[my_subjects] = my_notes
     print(course_notes)
+    
